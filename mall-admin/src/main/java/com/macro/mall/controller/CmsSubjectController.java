@@ -42,6 +42,5 @@ public class CmsSubjectController {
                                                         @RequestParam(value = "pageSize", defaultValue = "5") Integer pageSize) {
         List<CmsSubject> subjectList = subjectService.list(keyword, pageNum, pageSize);
         return CommonResult.success(CommonPage.restPage(subjectList));
-        //测试提交
     }
 }
